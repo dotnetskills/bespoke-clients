@@ -6,6 +6,7 @@
 <meta name="apple-mobile-web-app-capable" content="yes">
 <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
 <meta name="theme-color" content="#1a1a1a">
+<link rel="apple-touch-icon" href="images/icon-192.png">
 <title>Bespoke Meal Plan</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
@@ -27,6 +28,7 @@
   .brand {
     display: flex; align-items: center; gap: 10px; margin-bottom: 10px;
   }
+  .brand-logo { height: 28px; width: auto; }
   .brand h1 { font-size: 16px; font-weight: 700; color: #c5a55a; }
   .brand .date { margin-left: auto; font-size: 11px; color: rgba(229,224,223,0.4); }
   .nav {
@@ -76,12 +78,13 @@
 <body>
 <div class="top-bar">
   <div class="brand">
+    <img src="images/lion-logo.png" alt="Bespoke" class="brand-logo">
     <h1>Bespoke</h1>
     <span class="date" id="date"></span>
   </div>
   <div class="nav" id="nav"></div>
 </div>
-<div id="content"><div class="loading">Loading meal plan…</div></div>
+<div id="content"><div class="loading">Loading meal plan\u2026</div></div>
 
 <script>
 const DAYS = ["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"];
