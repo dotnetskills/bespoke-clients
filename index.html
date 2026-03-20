@@ -87,12 +87,11 @@
 const DAYS = ["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"];
 
 async function loadPlan() {
-  // Check for client-specific plan via ?client= param
   const params = new URLSearchParams(window.location.search);
   const client = params.get('client');
   const basePath = window.location.pathname.replace(/\/[^/]*$/, '') + '/';
-  const planFile = client ? basePath + 'plans/' + client + '.json' : basePath + 'plan.json';
- 
+  const planFile = basePath + 'plans/' + (client || 'plan') + '.json';
+
   try {
     const resp = await fetch(planFile);
     if (!resp.ok) throw new Error('Plan not found');
@@ -107,16 +106,13 @@ async function loadPlan() {
 function render(plan) {
   const { weekMeals, targets, ingredients, generated } = plan;
 
-  // Date
   document.getElementById('date').textContent = generated || '';
 
-  // Nav
   const nav = document.getElementById('nav');
   nav.innerHTML = DAYS.map((d, i) =>
     '<a data-day="' + d + '" class="' + (i === 0 ? 'active' : '') + '">' + d.slice(0,3) + '</a>'
   ).join('');
 
-  // Days
   const content = document.getElementById('content');
   content.innerHTML = '';
 
@@ -142,7 +138,7 @@ function render(plan) {
     dayEl.id = day.toLowerCase();
 
     let html = '<div class="day-head"><div class="day-name">' + (t.workout || day) + '</div><div class="day-label">' + day + '</div></div>';
-    html += '<div class="day-summary">' + Math.round(dayTotals.cal) + ' / ' + targetCal + ' cal · ' + Math.round(dayTotals.p) + 'P · ' + Math.round(dayTotals.c) + 'C · ' + Math.round(dayTotals.f) + 'F</div>';
+    html += '<div class="day-summary">' + Math.round(dayTotals.cal) + ' / ' + targetCal + ' cal \u00b7 ' + Math.round(dayTotals.p) + 'P \u00b7 ' + Math.round(dayTotals.c) + 'C \u00b7 ' + Math.round(dayTotals.f) + 'F</div>';
 
     meals.forEach(meal => {
       const mt = { cal: 0, p: 0, c: 0, f: 0 };
@@ -156,7 +152,7 @@ function render(plan) {
       });
 
       html += '<div class="card"><div class="card-head"><span class="card-name">' + meal.name + '</span>';
-      html += '<span class="card-macros">' + Math.round(mt.cal) + ' cal · ' + Math.round(mt.p) + 'P · ' + Math.round(mt.c) + 'C · ' + Math.round(mt.f) + 'F</span></div><ul>';
+      html += '<span class="card-macros">' + Math.round(mt.cal) + ' cal \u00b7 ' + Math.round(mt.p) + 'P \u00b7 ' + Math.round(mt.c) + 'C \u00b7 ' + Math.round(mt.f) + 'F</span></div><ul>';
 
       (meal.ingredients || []).forEach(ir => {
         const ing = ingredients[ir.ingredientId];
@@ -172,7 +168,6 @@ function render(plan) {
     content.appendChild(dayEl);
   });
 
-  // Nav click handling
   nav.addEventListener('click', (e) => {
     const a = e.target.closest('a[data-day]');
     if (!a) return;
