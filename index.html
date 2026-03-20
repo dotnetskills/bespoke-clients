@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="theme-color" content="#1a1a1a">
+<title>Bespoke Meal Plan</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="manifest" href="manifest.json">
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body {
+    font-family: Inter, -apple-system, sans-serif;
+    background: #1a1a1a;
+    color: #e5e0df;
+    -webkit-font-smoothing: antialiased;
+    padding-bottom: 72px;
+  }
+  .top-bar {
+    position: sticky; top: 0; z-index: 10;
+    background: #1a1a1a; border-bottom: 1px solid #2e2e2e;
+    padding: 12px 16px 0;
+  }
+  .brand {
+    display: flex; align-items: center; gap: 10px; margin-bottom: 10px;
+  }
+  .brand h1 { font-size: 16px; font-weight: 700; color: #c5a55a; }
+  .brand .date { margin-left: auto; font-size: 11px; color: rgba(229,224,223,0.4); }
+  .nav {
+    display: flex; gap: 2px; overflow-x: auto;
+    -webkit-overflow-scrolling: touch; padding-bottom: 10px;
+  }
+  .nav a {
+    flex: 1; text-align: center; padding: 6px 0; border-radius: 6px;
+    font-size: 12px; font-weight: 600; color: rgba(229,224,223,0.5);
+    text-decoration: none; background: #242424; min-width: 44px;
+    transition: all 0.15s; cursor: pointer;
+  }
+  .nav a.active, .nav a:active { background: #c5a55a; color: #1a1a1a; }
+  .day { padding: 16px; border-bottom: 1px solid #2e2e2e; display: none; }
+  .day.visible { display: block; }
+  .day-head { display: flex; align-items: baseline; justify-content: space-between; }
+  .day-name { font-size: 18px; font-weight: 700; color: #c5a55a; }
+  .day-label { font-size: 12px; color: rgba(229,224,223,0.4); }
+  .day-summary {
+    font-size: 11px; color: rgba(229,224,223,0.5);
+    margin: 4px 0 12px; padding: 6px 10px;
+    background: #242424; border-radius: 6px;
+  }
+  .card {
+    background: #242424; border-radius: 10px;
+    padding: 12px 14px; margin-bottom: 8px;
+  }
+  .card-head { margin-bottom: 8px; }
+  .card-name { font-size: 14px; font-weight: 600; display: block; }
+  .card-macros { font-size: 11px; color: rgba(229,224,223,0.5); display: block; margin-top: 2px; }
+  .card ul { list-style: none; padding: 0; }
+  .card li {
+    font-size: 13px; padding: 5px 0;
+    border-bottom: 1px solid #2e2e2e; color: #e5e0df;
+    display: flex; justify-content: space-between;
+  }
+  .card li:last-child { border-bottom: none; }
+  .card li .ing-name { flex: 1; }
+  .card li .ing-amt { color: rgba(229,224,223,0.5); font-size: 12px; white-space: nowrap; margin-left: 12px; }
+  .loading {
+    text-align: center; padding: 60px 20px;
+    color: rgba(229,224,223,0.4); font-size: 14px;
+  }
+  @media (min-width: 600px) { body { max-width: 480px; margin: 0 auto; } }
+</style>
+</head>
+<body>
+<div class="top-bar">
+  <div class="brand">
+    <h1>Bespoke</h1>
+    <span class="date" id="date"></span>
+  </div>
+  <div class="nav" id="nav"></div>
+</div>
+<div id="content"><div class="loading">Loading meal plan…</div></div>
+
+<script>
+const DAYS = ["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"];
+
+async function loadPlan() {
+  // Check for client-specific plan via ?client= param
+  const params = new URLSearchParams(window.location.search);
+  const client = params.get('client');
+  const planFile = client ? 'plans/' + client + '.json' : 'plan.json';
+
+  try {
+    const resp = await fetch(planFile);
+    if (!resp.ok) throw new Error('Plan not found');
+    return await resp.json();
+  } catch (e) {
+    document.getElementById('content').innerHTML =
+      '<div class="loading">No meal plan found.<br><br><span style="font-size:12px;color:rgba(229,224,223,0.3);">Looking for: ' + planFile + '</span></div>';
+    return null;
+  }
+}
+
+function render(plan) {
+  const { weekMeals, targets, ingredients, generated } = plan;
+
+  // Date
+  document.getElementById('date').textContent = generated || '';
+
+  // Nav
+  const nav = document.getElementById('nav');
+  nav.innerHTML = DAYS.map((d, i) =>
+    '<a data-day="' + d + '" class="' + (i === 0 ? 'active' : '') + '">' + d.slice(0,3) + '</a>'
+  ).join('');
+
+  // Days
+  const content = document.getElementById('content');
+  content.innerHTML = '';
+
+  DAYS.forEach((day, i) => {
+    const meals = weekMeals[day] || [];
+    const t = targets[day] || {};
+    const targetCal = Math.round(4 * (t.p || 0) + 4 * (t.c || 0) + 9 * (t.f || 0));
+
+    const dayTotals = { cal: 0, p: 0, c: 0, f: 0 };
+    meals.forEach(meal => {
+      (meal.ingredients || []).forEach(ir => {
+        const ing = ingredients[ir.ingredientId];
+        if (!ing) return;
+        dayTotals.cal += ir.amount * ing.per.cal;
+        dayTotals.p += ir.amount * ing.per.p;
+        dayTotals.c += ir.amount * ing.per.c;
+        dayTotals.f += ir.amount * ing.per.f;
+      });
+    });
+
+    const dayEl = document.createElement('div');
+    dayEl.className = 'day' + (i === 0 ? ' visible' : '');
+    dayEl.id = day.toLowerCase();
+
+    let html = '<div class="day-head"><div class="day-name">' + (t.workout || day) + '</div><div class="day-label">' + day + '</div></div>';
+    html += '<div class="day-summary">' + Math.round(dayTotals.cal) + ' / ' + targetCal + ' cal · ' + Math.round(dayTotals.p) + 'P · ' + Math.round(dayTotals.c) + 'C · ' + Math.round(dayTotals.f) + 'F</div>';
+
+    meals.forEach(meal => {
+      const mt = { cal: 0, p: 0, c: 0, f: 0 };
+      (meal.ingredients || []).forEach(ir => {
+        const ing = ingredients[ir.ingredientId];
+        if (!ing) return;
+        mt.cal += ir.amount * ing.per.cal;
+        mt.p += ir.amount * ing.per.p;
+        mt.c += ir.amount * ing.per.c;
+        mt.f += ir.amount * ing.per.f;
+      });
+
+      html += '<div class="card"><div class="card-head"><span class="card-name">' + meal.name + '</span>';
+      html += '<span class="card-macros">' + Math.round(mt.cal) + ' cal · ' + Math.round(mt.p) + 'P · ' + Math.round(mt.c) + 'C · ' + Math.round(mt.f) + 'F</span></div><ul>';
+
+      (meal.ingredients || []).forEach(ir => {
+        const ing = ingredients[ir.ingredientId];
+        if (!ing) return;
+        const unit = ing.unit === 'ea' ? '' : ' ' + ing.unit;
+        html += '<li><span class="ing-name">' + ing.name + '</span><span class="ing-amt">' + ir.amount + unit + '</span></li>';
+      });
+
+      html += '</ul></div>';
+    });
+
+    dayEl.innerHTML = html;
+    content.appendChild(dayEl);
+  });
+
+  // Nav click handling
+  nav.addEventListener('click', (e) => {
+    const a = e.target.closest('a[data-day]');
+    if (!a) return;
+    const day = a.dataset.day;
+    document.querySelectorAll('.day').forEach(d => d.classList.remove('visible'));
+    document.querySelectorAll('.nav a').forEach(a => a.classList.remove('active'));
+    document.getElementById(day.toLowerCase()).classList.add('visible');
+    a.classList.add('active');
+    window.scrollTo(0, 0);
+  });
+}
+
+loadPlan().then(plan => { if (plan) render(plan); });
+</script>
+</body>
+</html>
