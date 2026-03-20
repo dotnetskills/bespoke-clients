@@ -90,8 +90,9 @@ async function loadPlan() {
   // Check for client-specific plan via ?client= param
   const params = new URLSearchParams(window.location.search);
   const client = params.get('client');
-  const planFile = client ? 'plans/' + client + '.json' : 'plan.json';
-
+  const basePath = window.location.pathname.replace(/\/[^/]*$/, '') + '/';
+  const planFile = client ? basePath + 'plans/' + client + '.json' : basePath + 'plan.json';
+ 
   try {
     const resp = await fetch(planFile);
     if (!resp.ok) throw new Error('Plan not found');
