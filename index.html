@@ -93,7 +93,7 @@ async function loadPlan() {
   const params = new URLSearchParams(window.location.search);
   const client = params.get('client');
   const basePath = window.location.pathname.replace(/\/[^/]*$/, '') + '/';
-  const planFile = basePath + 'plans/' + (client || 'plan') + '.json';
+  const planFile = basePath + 'plans/' + (client || 'plan') + '.json?t=' + Date.now();
 
   try {
     const resp = await fetch(planFile);
