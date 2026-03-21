@@ -771,7 +771,7 @@
           {
             "id": "ir_95",
             "ingredientId": "ingredient.transparent_labs_grass_fed_whey_protein_isolate",
-            "amount": 55
+            "amount": 35
           },
           {
             "id": "ir_96",
@@ -789,12 +789,12 @@
           {
             "id": "ir_97",
             "ingredientId": "ingredient.good_culture_2pct_low_fat_cottage_cheese",
-            "amount": 264
+            "amount": 200
           },
           {
             "id": "ir_98",
             "ingredientId": "ingredient.kind_oats_and_honey_granola",
-            "amount": 28
+            "amount": 32
           }
         ],
         "collapsed": false
@@ -807,7 +807,7 @@
           {
             "id": "ir_99",
             "ingredientId": "ingredient.prime_filet_steak",
-            "amount": 260
+            "amount": 226
           },
           {
             "id": "ir_100",
@@ -817,7 +817,7 @@
           {
             "id": "ir_101",
             "ingredientId": "ingredient.whipped_cream_cheese_spread",
-            "amount": 40
+            "amount": 60
           }
         ],
         "collapsed": false
@@ -835,7 +835,7 @@
           {
             "id": "ir_103",
             "ingredientId": "ingredient.kind_oats_and_honey_granola",
-            "amount": 54
+            "amount": 40
           }
         ],
         "collapsed": false
@@ -848,12 +848,12 @@
           {
             "id": "ir_104",
             "ingredientId": "ingredient.good_culture_2pct_low_fat_cottage_cheese",
-            "amount": 154
+            "amount": 200
           },
           {
             "id": "ir_105",
             "ingredientId": "ingredient.kind_oats_and_honey_granola",
-            "amount": 20
+            "amount": 85
           }
         ],
         "collapsed": false
@@ -1070,7 +1070,7 @@
     },
     "ingredient.transparent_labs_grass_fed_whey_protein_isolate": {
       "id": "ingredient.transparent_labs_grass_fed_whey_protein_isolate",
-      "name": "TL Whey Protein Isolate",
+      "name": "Transparent Labs Protein",
       "unit": "g",
       "per": {
         "cal": 3.724928,
