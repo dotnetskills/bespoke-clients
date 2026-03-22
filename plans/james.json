@@ -1,5 +1,5 @@
 {
-  "generated": "Mar 20, 2026",
+  "generated": "Mar 22, 2026",
   "weekMeals": {
     "Sunday": [
       {
@@ -13,7 +13,7 @@
             "amount": 28
           }
         ],
-        "collapsed": true
+        "collapsed": false
       },
       {
         "id": "meal_2",
@@ -23,10 +23,10 @@
           {
             "id": "ir_2",
             "ingredientId": "ingredient.nutrabio_super_carb",
-            "amount": 28
+            "amount": 3
           }
         ],
-        "collapsed": true
+        "collapsed": false
       },
       {
         "id": "meal_3",
@@ -36,7 +36,7 @@
           {
             "id": "ir_3",
             "ingredientId": "ingredient.muscle_feast_highly_branched_cyclic_dextrin_powder",
-            "amount": 60
+            "amount": 40
           },
           {
             "id": "ir_4",
@@ -46,10 +46,10 @@
           {
             "id": "ir_5",
             "ingredientId": "ingredient.transparent_labs_grass_fed_whey_protein_isolate",
-            "amount": 70
+            "amount": 50
           }
         ],
-        "collapsed": true
+        "collapsed": false
       },
       {
         "id": "meal_4",
@@ -59,12 +59,12 @@
           {
             "id": "ir_6",
             "ingredientId": "ingredient.good_culture_2pct_low_fat_cottage_cheese",
-            "amount": 150
+            "amount": 170
           },
           {
             "id": "ir_7",
             "ingredientId": "ingredient.kind_oats_and_honey_granola",
-            "amount": 20
+            "amount": 80
           }
         ],
         "collapsed": false
@@ -77,7 +77,7 @@
           {
             "id": "ir_8",
             "ingredientId": "ingredient.sprouts_all_natural_95pct_extra_lean_ground_beef",
-            "amount": 170
+            "amount": 200
           },
           {
             "id": "ir_9",
@@ -92,12 +92,17 @@
           {
             "id": "ir_11",
             "ingredientId": "ingredient.joseph_farms_part_skim_mozzarella_ball",
-            "amount": 90
+            "amount": 70
           },
           {
             "id": "ir_13",
             "ingredientId": "ingredient.taste_flavor_creamy_southwest_ranch",
             "amount": 30
+          },
+          {
+            "id": "ir_2",
+            "ingredientId": "ingredient.olive_oil",
+            "amount": 3
           }
         ],
         "collapsed": false
@@ -110,12 +115,12 @@
           {
             "id": "ir_14",
             "ingredientId": "ingredient.good_culture_2pct_low_fat_cottage_cheese",
-            "amount": 110
+            "amount": 145
           },
           {
             "id": "ir_15",
             "ingredientId": "ingredient.kind_oats_and_honey_granola",
-            "amount": 20
+            "amount": 50
           }
         ],
         "collapsed": false
@@ -151,7 +156,7 @@
             "amount": 28
           }
         ],
-        "collapsed": false
+        "collapsed": true
       },
       {
         "id": "meal_9",
@@ -164,7 +169,7 @@
             "amount": 28
           }
         ],
-        "collapsed": false
+        "collapsed": true
       },
       {
         "id": "meal_10",
@@ -184,10 +189,10 @@
           {
             "id": "ir_22",
             "ingredientId": "ingredient.transparent_labs_grass_fed_whey_protein_isolate",
-            "amount": 65
+            "amount": 50
           }
         ],
-        "collapsed": false
+        "collapsed": true
       },
       {
         "id": "meal_11",
@@ -197,12 +202,12 @@
           {
             "id": "ir_23",
             "ingredientId": "ingredient.good_culture_2pct_low_fat_cottage_cheese",
-            "amount": 170
+            "amount": 190
           },
           {
             "id": "ir_24",
             "ingredientId": "ingredient.kind_oats_and_honey_granola",
-            "amount": 25
+            "amount": 40
           }
         ],
         "collapsed": false
@@ -215,7 +220,7 @@
           {
             "id": "ir_25",
             "ingredientId": "ingredient.sprouts_all_natural_95pct_extra_lean_ground_beef",
-            "amount": 190
+            "amount": 200
           },
           {
             "id": "ir_26",
@@ -230,12 +235,17 @@
           {
             "id": "ir_28",
             "ingredientId": "ingredient.joseph_farms_part_skim_mozzarella_ball",
-            "amount": 40
+            "amount": 70
           },
           {
             "id": "ir_30",
             "ingredientId": "ingredient.taste_flavor_spicy_garlic_parm",
             "amount": 30
+          },
+          {
+            "id": "ir_54",
+            "ingredientId": "ingredient.olive_oil",
+            "amount": 10
           }
         ],
         "collapsed": false
@@ -248,12 +258,12 @@
           {
             "id": "ir_31",
             "ingredientId": "ingredient.good_culture_2pct_low_fat_cottage_cheese",
-            "amount": 150
+            "amount": 170
           },
           {
             "id": "ir_32",
             "ingredientId": "ingredient.kind_oats_and_honey_granola",
-            "amount": 25
+            "amount": 35
           }
         ],
         "collapsed": false
@@ -279,25 +289,155 @@
     ],
     "Tuesday": [
       {
-        "id": "meal_15",
+        "id": "meal_23",
         "recipeId": "recipe.pre_workout",
         "name": "Pre Workout",
         "ingredients": [
           {
-            "id": "ir_35",
+            "id": "ir_55",
             "ingredientId": "ingredient.nutrabio_super_carb",
             "amount": 28
+          }
+        ],
+        "collapsed": true
+      },
+      {
+        "id": "meal_24",
+        "recipeId": "recipe.intra_workout",
+        "name": "Intra Workout",
+        "ingredients": [
+          {
+            "id": "ir_56",
+            "ingredientId": "ingredient.nutrabio_super_carb",
+            "amount": 28
+          }
+        ],
+        "collapsed": true
+      },
+      {
+        "id": "meal_25",
+        "recipeId": "recipe.post_workout_shake",
+        "name": "Post Workout Shake",
+        "ingredients": [
+          {
+            "id": "ir_57",
+            "ingredientId": "ingredient.muscle_feast_highly_branched_cyclic_dextrin_powder",
+            "amount": 50
+          },
+          {
+            "id": "ir_58",
+            "ingredientId": "ingredient.almond_breeze_unsweetened_original_almondmilk",
+            "amount": 475
+          },
+          {
+            "id": "ir_59",
+            "ingredientId": "ingredient.transparent_labs_grass_fed_whey_protein_isolate",
+            "amount": 50
+          }
+        ],
+        "collapsed": true
+      },
+      {
+        "id": "meal_26",
+        "recipeId": "recipe.mid_morning",
+        "name": "Mid Morning",
+        "ingredients": [
+          {
+            "id": "ir_60",
+            "ingredientId": "ingredient.good_culture_2pct_low_fat_cottage_cheese",
+            "amount": 190
+          },
+          {
+            "id": "ir_61",
+            "ingredientId": "ingredient.kind_oats_and_honey_granola",
+            "amount": 40
           }
         ],
         "collapsed": false
       },
       {
-        "id": "meal_16",
-        "recipeId": "recipe.intra_workout",
-        "name": "Intra Workout",
+        "id": "meal_27",
+        "recipeId": "recipe.beef_spicy_garlic_parm_burrito",
+        "name": "Beef Spicy Garlic Parm Burrito",
         "ingredients": [
           {
-            "id": "ir_36",
+            "id": "ir_62",
+            "ingredientId": "ingredient.sprouts_all_natural_95pct_extra_lean_ground_beef",
+            "amount": 200
+          },
+          {
+            "id": "ir_63",
+            "ingredientId": "ingredient.mission_extra_grande_burrito_flour_tortillas",
+            "amount": 102
+          },
+          {
+            "id": "ir_64",
+            "ingredientId": "ingredient.white_rice",
+            "amount": 50
+          },
+          {
+            "id": "ir_65",
+            "ingredientId": "ingredient.joseph_farms_part_skim_mozzarella_ball",
+            "amount": 70
+          },
+          {
+            "id": "ir_66",
+            "ingredientId": "ingredient.taste_flavor_spicy_garlic_parm",
+            "amount": 30
+          },
+          {
+            "id": "ir_67",
+            "ingredientId": "ingredient.olive_oil",
+            "amount": 10
+          }
+        ],
+        "collapsed": false
+      },
+      {
+        "id": "meal_28",
+        "recipeId": "recipe.late_afternoon",
+        "name": "Late Afternoon",
+        "ingredients": [
+          {
+            "id": "ir_68",
+            "ingredientId": "ingredient.good_culture_2pct_low_fat_cottage_cheese",
+            "amount": 170
+          },
+          {
+            "id": "ir_69",
+            "ingredientId": "ingredient.kind_oats_and_honey_granola",
+            "amount": 35
+          }
+        ],
+        "collapsed": false
+      },
+      {
+        "id": "meal_29",
+        "recipeId": "recipe.bedtime",
+        "name": "Bedtime",
+        "ingredients": [
+          {
+            "id": "ir_70",
+            "ingredientId": "ingredient.good_culture_2pct_low_fat_cottage_cheese",
+            "amount": 190
+          },
+          {
+            "id": "ir_71",
+            "ingredientId": "ingredient.kind_oats_and_honey_granola",
+            "amount": 85
+          }
+        ],
+        "collapsed": false
+      }
+    ],
+    "Wednesday": [
+      {
+        "id": "meal_16",
+        "recipeId": "recipe.pre_workout",
+        "name": "Pre Workout",
+        "ingredients": [
+          {
+            "id": "ir_37",
             "ingredientId": "ingredient.nutrabio_super_carb",
             "amount": 28
           }
@@ -306,256 +446,131 @@
       },
       {
         "id": "meal_17",
+        "recipeId": "recipe.intra_workout",
+        "name": "Intra Workout",
+        "ingredients": [
+          {
+            "id": "ir_38",
+            "ingredientId": "ingredient.nutrabio_super_carb",
+            "amount": 3
+          }
+        ],
+        "collapsed": true
+      },
+      {
+        "id": "meal_18",
         "recipeId": "recipe.post_workout_shake",
         "name": "Post Workout Shake",
         "ingredients": [
           {
-            "id": "ir_37",
+            "id": "ir_39",
             "ingredientId": "ingredient.muscle_feast_highly_branched_cyclic_dextrin_powder",
-            "amount": 60
+            "amount": 40
           },
           {
-            "id": "ir_38",
+            "id": "ir_40",
             "ingredientId": "ingredient.almond_breeze_unsweetened_original_almondmilk",
             "amount": 475
           },
           {
-            "id": "ir_39",
-            "ingredientId": "ingredient.transparent_labs_grass_fed_whey_protein_isolate",
-            "amount": 69.8
-          }
-        ],
-        "collapsed": false
-      },
-      {
-        "id": "meal_18",
-        "recipeId": "recipe.mid_morning",
-        "name": "Mid Morning",
-        "ingredients": [
-          {
-            "id": "ir_40",
-            "ingredientId": "ingredient.good_culture_2pct_low_fat_cottage_cheese",
-            "amount": 264
-          },
-          {
             "id": "ir_41",
-            "ingredientId": "ingredient.kind_oats_and_honey_granola",
-            "amount": 28
+            "ingredientId": "ingredient.transparent_labs_grass_fed_whey_protein_isolate",
+            "amount": 50
           }
         ],
         "collapsed": false
       },
       {
         "id": "meal_19",
-        "recipeId": "recipe.beef_buffalo_blue_cheese_burrito",
-        "name": "Beef Buffalo Blue Cheese Burrito",
+        "recipeId": "recipe.mid_morning",
+        "name": "Mid Morning",
         "ingredients": [
           {
             "id": "ir_42",
-            "ingredientId": "ingredient.sprouts_all_natural_95pct_extra_lean_ground_beef",
-            "amount": 200
+            "ingredientId": "ingredient.good_culture_2pct_low_fat_cottage_cheese",
+            "amount": 170
           },
           {
             "id": "ir_43",
-            "ingredientId": "ingredient.mission_extra_grande_burrito_flour_tortillas",
-            "amount": 102
-          },
-          {
-            "id": "ir_44",
-            "ingredientId": "ingredient.white_rice",
-            "amount": 90
-          },
-          {
-            "id": "ir_45",
-            "ingredientId": "ingredient.joseph_farms_part_skim_mozzarella_ball",
-            "amount": 25
-          },
-          {
-            "id": "ir_46",
-            "ingredientId": "ingredient.olive_oil",
-            "amount": 10
-          },
-          {
-            "id": "ir_47",
-            "ingredientId": "ingredient.taste_flavor_buffalo_blue_cheese",
-            "amount": 90
+            "ingredientId": "ingredient.kind_oats_and_honey_granola",
+            "amount": 80
           }
         ],
         "collapsed": false
       },
       {
         "id": "meal_20",
-        "recipeId": "recipe.late_afternoon",
-        "name": "Late Afternoon",
+        "recipeId": "recipe.beef_creamy_southwest_ranch_burrito",
+        "name": "Beef SW Ranch Burrito",
         "ingredients": [
           {
+            "id": "ir_44",
+            "ingredientId": "ingredient.sprouts_all_natural_95pct_extra_lean_ground_beef",
+            "amount": 200
+          },
+          {
+            "id": "ir_45",
+            "ingredientId": "ingredient.mission_extra_grande_burrito_flour_tortillas",
+            "amount": 102
+          },
+          {
+            "id": "ir_46",
+            "ingredientId": "ingredient.white_rice",
+            "amount": 75
+          },
+          {
+            "id": "ir_47",
+            "ingredientId": "ingredient.joseph_farms_part_skim_mozzarella_ball",
+            "amount": 70
+          },
+          {
             "id": "ir_48",
-            "ingredientId": "ingredient.good_culture_2pct_low_fat_cottage_cheese",
-            "amount": 190
+            "ingredientId": "ingredient.taste_flavor_creamy_southwest_ranch",
+            "amount": 30
           },
           {
             "id": "ir_49",
-            "ingredientId": "ingredient.kind_oats_and_honey_granola",
-            "amount": 35
+            "ingredientId": "ingredient.olive_oil",
+            "amount": 3
           }
         ],
         "collapsed": false
       },
       {
         "id": "meal_21",
-        "recipeId": "recipe.bedtime",
-        "name": "Bedtime",
-        "ingredients": [
-          {
-            "id": "ir_50",
-            "ingredientId": "ingredient.good_culture_2pct_low_fat_cottage_cheese",
-            "amount": 154
-          },
-          {
-            "id": "ir_51",
-            "ingredientId": "ingredient.kind_oats_and_honey_granola",
-            "amount": 20
-          }
-        ],
-        "collapsed": false
-      }
-    ],
-    "Wednesday": [
-      {
-        "id": "meal_1",
-        "recipeId": "recipe.pre_workout",
-        "name": "Pre Workout",
-        "ingredients": [
-          {
-            "id": "ir_1",
-            "ingredientId": "ingredient.nutrabio_super_carb",
-            "amount": 28
-          }
-        ],
-        "collapsed": true
-      },
-      {
-        "id": "meal_2",
-        "recipeId": "recipe.intra_workout",
-        "name": "Intra Workout",
-        "ingredients": [
-          {
-            "id": "ir_2",
-            "ingredientId": "ingredient.nutrabio_super_carb",
-            "amount": 28
-          }
-        ],
-        "collapsed": true
-      },
-      {
-        "id": "meal_3",
-        "recipeId": "recipe.post_workout_shake",
-        "name": "Post Workout Shake",
-        "ingredients": [
-          {
-            "id": "ir_3",
-            "ingredientId": "ingredient.muscle_feast_highly_branched_cyclic_dextrin_powder",
-            "amount": 60
-          },
-          {
-            "id": "ir_4",
-            "ingredientId": "ingredient.almond_breeze_unsweetened_original_almondmilk",
-            "amount": 475
-          },
-          {
-            "id": "ir_5",
-            "ingredientId": "ingredient.transparent_labs_grass_fed_whey_protein_isolate",
-            "amount": 70
-          }
-        ],
-        "collapsed": true
-      },
-      {
-        "id": "meal_4",
-        "recipeId": "recipe.mid_morning",
-        "name": "Mid Morning",
-        "ingredients": [
-          {
-            "id": "ir_6",
-            "ingredientId": "ingredient.good_culture_2pct_low_fat_cottage_cheese",
-            "amount": 150
-          },
-          {
-            "id": "ir_7",
-            "ingredientId": "ingredient.kind_oats_and_honey_granola",
-            "amount": 20
-          }
-        ],
-        "collapsed": true
-      },
-      {
-        "id": "meal_5",
-        "recipeId": "recipe.beef_creamy_southwest_ranch_burrito",
-        "name": "Beef SW Ranch Burrito",
-        "ingredients": [
-          {
-            "id": "ir_8",
-            "ingredientId": "ingredient.sprouts_all_natural_95pct_extra_lean_ground_beef",
-            "amount": 170
-          },
-          {
-            "id": "ir_9",
-            "ingredientId": "ingredient.mission_extra_grande_burrito_flour_tortillas",
-            "amount": 102
-          },
-          {
-            "id": "ir_10",
-            "ingredientId": "ingredient.white_rice",
-            "amount": 75
-          },
-          {
-            "id": "ir_11",
-            "ingredientId": "ingredient.joseph_farms_part_skim_mozzarella_ball",
-            "amount": 90
-          },
-          {
-            "id": "ir_12",
-            "ingredientId": "ingredient.taste_flavor_creamy_southwest_ranch",
-            "amount": 30
-          }
-        ],
-        "collapsed": true
-      },
-      {
-        "id": "meal_6",
         "recipeId": "recipe.late_afternoon",
         "name": "Late Afternoon",
         "ingredients": [
           {
-            "id": "ir_13",
+            "id": "ir_50",
             "ingredientId": "ingredient.good_culture_2pct_low_fat_cottage_cheese",
-            "amount": 110
+            "amount": 145
           },
           {
-            "id": "ir_14",
+            "id": "ir_51",
             "ingredientId": "ingredient.kind_oats_and_honey_granola",
-            "amount": 20
+            "amount": 50
           }
         ],
-        "collapsed": true
+        "collapsed": false
       },
       {
-        "id": "meal_7",
+        "id": "meal_22",
         "recipeId": "recipe.bedtime",
         "name": "Bedtime",
         "ingredients": [
           {
-            "id": "ir_15",
+            "id": "ir_52",
             "ingredientId": "ingredient.good_culture_2pct_low_fat_cottage_cheese",
             "amount": 190
           },
           {
-            "id": "ir_16",
+            "id": "ir_53",
             "ingredientId": "ingredient.kind_oats_and_honey_granola",
             "amount": 85
           }
         ],
-        "collapsed": true
+        "collapsed": false
       }
     ],
     "Thursday": [
@@ -570,20 +585,20 @@
             "amount": 28
           }
         ],
-        "collapsed": false
+        "collapsed": true
       },
       {
-        "id": "meal_30",
+        "id": "meal_1",
         "recipeId": "recipe.intra_workout",
         "name": "Intra Workout",
         "ingredients": [
           {
-            "id": "ir_70",
+            "id": "ir_1",
             "ingredientId": "ingredient.nutrabio_super_carb",
-            "amount": 28
+            "amount": 20
           }
         ],
-        "collapsed": false
+        "collapsed": true
       },
       {
         "id": "meal_31",
@@ -603,7 +618,7 @@
           {
             "id": "ir_73",
             "ingredientId": "ingredient.transparent_labs_grass_fed_whey_protein_isolate",
-            "amount": 69.8
+            "amount": 60
           }
         ],
         "collapsed": false
@@ -616,7 +631,7 @@
           {
             "id": "ir_74",
             "ingredientId": "ingredient.good_culture_2pct_low_fat_cottage_cheese",
-            "amount": 200
+            "amount": 110
           },
           {
             "id": "ir_75",
@@ -639,7 +654,7 @@
           {
             "id": "ir_77",
             "ingredientId": "ingredient.fage_0pct_milkfat_plain_greek_yogurt",
-            "amount": 170
+            "amount": 240
           },
           {
             "id": "ir_78",
@@ -652,14 +667,14 @@
             "amount": 85
           },
           {
-            "id": "ir_80",
-            "ingredientId": "ingredient.olive_oil",
-            "amount": 10
-          },
-          {
             "id": "ir_81",
             "ingredientId": "ingredient.turkey_pepperoni",
-            "amount": 60
+            "amount": 30
+          },
+          {
+            "id": "ir_1",
+            "ingredientId": "ingredient.olive_oil",
+            "amount": 20
           }
         ],
         "collapsed": false
@@ -672,12 +687,12 @@
           {
             "id": "ir_82",
             "ingredientId": "ingredient.good_culture_2pct_low_fat_cottage_cheese",
-            "amount": 150
+            "amount": 110
           },
           {
             "id": "ir_83",
             "ingredientId": "ingredient.kind_oats_and_honey_granola",
-            "amount": 70
+            "amount": 100
           }
         ],
         "collapsed": false
@@ -690,12 +705,12 @@
           {
             "id": "ir_84",
             "ingredientId": "ingredient.good_culture_2pct_low_fat_cottage_cheese",
-            "amount": 120
+            "amount": 180
           },
           {
             "id": "ir_85",
             "ingredientId": "ingredient.kind_oats_and_honey_granola",
-            "amount": 45
+            "amount": 85
           }
         ],
         "collapsed": false
@@ -710,7 +725,7 @@
           {
             "id": "ir_92",
             "ingredientId": "ingredient.transparent_labs_grass_fed_whey_protein_isolate",
-            "amount": 85
+            "amount": 90
           },
           {
             "id": "ir_93",
@@ -726,19 +741,19 @@
         "name": "Prime Filet Plate",
         "ingredients": [
           {
-            "id": "ir_1",
-            "ingredientId": "ingredient.prime_filet_steak",
-            "amount": 260
-          },
-          {
             "id": "ir_2",
             "ingredientId": "ingredient.lucky_7_multigrain_sourdough",
-            "amount": 165
+            "amount": 235
           },
           {
             "id": "ir_3",
             "ingredientId": "ingredient.whipped_cream_cheese_spread",
             "amount": 60
+          },
+          {
+            "id": "ir_73",
+            "ingredientId": "ingredient.sprouts_all_natural_95pct_extra_lean_ground_beef",
+            "amount": 220
           }
         ],
         "collapsed": false
@@ -751,12 +766,12 @@
           {
             "id": "ir_4",
             "ingredientId": "ingredient.good_culture_2pct_low_fat_cottage_cheese",
-            "amount": 200
+            "amount": 330
           },
           {
             "id": "ir_5",
             "ingredientId": "ingredient.kind_oats_and_honey_granola",
-            "amount": 143
+            "amount": 190
           }
         ],
         "collapsed": false
@@ -771,12 +786,12 @@
           {
             "id": "ir_95",
             "ingredientId": "ingredient.transparent_labs_grass_fed_whey_protein_isolate",
-            "amount": 35
+            "amount": 70
           },
           {
             "id": "ir_96",
             "ingredientId": "ingredient.almond_breeze_unsweetened_original_almondmilk",
-            "amount": 475
+            "amount": 280
           }
         ],
         "collapsed": false
@@ -789,12 +804,12 @@
           {
             "id": "ir_97",
             "ingredientId": "ingredient.good_culture_2pct_low_fat_cottage_cheese",
-            "amount": 200
+            "amount": 270
           },
           {
             "id": "ir_98",
             "ingredientId": "ingredient.kind_oats_and_honey_granola",
-            "amount": 32
+            "amount": 65
           }
         ],
         "collapsed": false
@@ -805,11 +820,6 @@
         "name": "Prime Filet Plate",
         "ingredients": [
           {
-            "id": "ir_99",
-            "ingredientId": "ingredient.prime_filet_steak",
-            "amount": 226
-          },
-          {
             "id": "ir_100",
             "ingredientId": "ingredient.lucky_7_multigrain_sourdough",
             "amount": 168
@@ -818,6 +828,11 @@
             "id": "ir_101",
             "ingredientId": "ingredient.whipped_cream_cheese_spread",
             "amount": 60
+          },
+          {
+            "id": "ir_72",
+            "ingredientId": "ingredient.sprouts_all_natural_95pct_extra_lean_ground_beef",
+            "amount": 75
           }
         ],
         "collapsed": false
@@ -830,12 +845,12 @@
           {
             "id": "ir_102",
             "ingredientId": "ingredient.good_culture_2pct_low_fat_cottage_cheese",
-            "amount": 190
+            "amount": 240
           },
           {
             "id": "ir_103",
             "ingredientId": "ingredient.kind_oats_and_honey_granola",
-            "amount": 40
+            "amount": 65
           }
         ],
         "collapsed": false
@@ -848,7 +863,7 @@
           {
             "id": "ir_104",
             "ingredientId": "ingredient.good_culture_2pct_low_fat_cottage_cheese",
-            "amount": 200
+            "amount": 230
           },
           {
             "id": "ir_105",
@@ -864,50 +879,50 @@
     "Sunday": {
       "cal": 2585,
       "p": 200,
-      "c": 325,
+      "c": 345,
       "f": 65,
       "workout": "Legs"
     },
     "Monday": {
       "cal": 2450,
       "p": 200,
-      "c": 300,
-      "f": 50,
+      "c": 320,
+      "f": 65,
       "workout": "Upper Body"
     },
     "Tuesday": {
       "cal": 2450,
       "p": 200,
-      "c": 300,
-      "f": 50,
+      "c": 320,
+      "f": 65,
       "workout": "Upper Body"
     },
     "Wednesday": {
       "cal": 2585,
       "p": 200,
-      "c": 300,
+      "c": 345,
       "f": 65,
       "workout": "Legs"
     },
     "Thursday": {
       "cal": 2930,
       "p": 200,
-      "c": 375,
+      "c": 425,
       "f": 70,
       "workout": "Big Volume Upper Body"
     },
     "Friday": {
       "cal": 2150,
       "p": 200,
-      "c": 180,
-      "f": 70,
+      "c": 245,
+      "f": 55,
       "workout": "Lent Friday - Rest"
     },
     "Saturday": {
       "cal": 2230,
       "p": 200,
-      "c": 200,
-      "f": 70,
+      "c": 245,
+      "f": 55,
       "workout": "Rest"
     }
   },
@@ -953,7 +968,7 @@
     },
     "ingredient.joseph_farms_part_skim_mozzarella_ball": {
       "id": "ingredient.joseph_farms_part_skim_mozzarella_ball",
-      "name": "Part Skim Mozzarella",
+      "name": "Joseph Farms Part Skim Mozzarella",
       "unit": "g",
       "per": {
         "cal": 2.821869,
@@ -1005,7 +1020,7 @@
     },
     "ingredient.taste_flavor_creamy_southwest_ranch": {
       "id": "ingredient.taste_flavor_creamy_southwest_ranch",
-      "name": "Creamy Southwest Ranch",
+      "name": "Taste Flavor Creamy Southwest Ranch",
       "unit": "g",
       "per": {
         "cal": 1,
@@ -1018,7 +1033,7 @@
     },
     "ingredient.taste_flavor_spicy_garlic_parm": {
       "id": "ingredient.taste_flavor_spicy_garlic_parm",
-      "name": "Spicy Garlic Parm",
+      "name": "Taste Flavor Spicy Garlic Parm",
       "unit": "g",
       "per": {
         "cal": 0.666667,
@@ -1031,7 +1046,7 @@
     },
     "ingredient.taste_flavor_buffalo_blue_cheese": {
       "id": "ingredient.taste_flavor_buffalo_blue_cheese",
-      "name": "Buffalo Blue Cheese",
+      "name": "Taste Flavor Buffalo Blue Cheese",
       "unit": "g",
       "per": {
         "cal": 0.294118,
@@ -1057,7 +1072,7 @@
     },
     "ingredient.muscle_feast_highly_branched_cyclic_dextrin_powder": {
       "id": "ingredient.muscle_feast_highly_branched_cyclic_dextrin_powder",
-      "name": "Cyclic Dextrin Powder",
+      "name": "Muscle Feast Cyclic Dextrin Powder",
       "unit": "g",
       "per": {
         "cal": 4,
@@ -1135,7 +1150,7 @@
     },
     "ingredient.turkey_pepperoni": {
       "id": "ingredient.turkey_pepperoni",
-      "name": "Turkey Pepperoni",
+      "name": "Applegate Turkey Pepperoni",
       "unit": "g",
       "per": {
         "cal": 2.666667,
@@ -1148,7 +1163,7 @@
     },
     "ingredient.arborio_rice": {
       "id": "ingredient.arborio_rice",
-      "name": "Arborio Rice",
+      "name": "Vigo Arborio Rice",
       "unit": "g",
       "per": {
         "cal": 2.5,
@@ -1174,7 +1189,7 @@
     },
     "ingredient.chicken_broth": {
       "id": "ingredient.chicken_broth",
-      "name": "Chicken Broth",
+      "name": "Kettle & Fire Chicken Broth",
       "unit": "ml",
       "per": {
         "cal": 0.020833,
@@ -1187,7 +1202,7 @@
     },
     "ingredient.white_cooking_wine": {
       "id": "ingredient.white_cooking_wine",
-      "name": "White Cooking Wine",
+      "name": "Holland's White Cooking Wine",
       "unit": "ml",
       "per": {
         "cal": 0.666667,
@@ -1213,7 +1228,7 @@
     },
     "ingredient.truffle_sauce": {
       "id": "ingredient.truffle_sauce",
-      "name": "Truffle Sauce",
+      "name": "The Truffiest Truffle Sauce",
       "unit": "g",
       "per": {
         "cal": 2.666667,
@@ -1226,7 +1241,7 @@
     },
     "ingredient.unrefined_cream_cheese_carrot_cupcake": {
       "id": "ingredient.unrefined_cream_cheese_carrot_cupcake",
-      "name": "Cream Cheese Carrot Cupcake",
+      "name": "Unrefined Cream Cheese Carrot Cupcake",
       "unit": "ea",
       "per": {
         "cal": 537,
@@ -1252,7 +1267,7 @@
     },
     "ingredient.lucky_7_multigrain_sourdough": {
       "id": "ingredient.lucky_7_multigrain_sourdough",
-      "name": "Lucky 7 Multigrain Sourdough",
+      "name": "Izzo Lucky 7 Multigrain Sourdough",
       "unit": "g",
       "per": {
         "cal": 2.142857,
@@ -1265,7 +1280,7 @@
     },
     "ingredient.whipped_cream_cheese_spread": {
       "id": "ingredient.whipped_cream_cheese_spread",
-      "name": "Whipped Cream Cheese Spread",
+      "name": "Sprouts Whipped Cream Cheese Spread",
       "unit": "g",
       "per": {
         "cal": 3.5,
