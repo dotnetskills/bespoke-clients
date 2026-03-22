@@ -121,8 +121,9 @@ function render(plan) {
   document.getElementById('date').textContent = generated || '';
 
   const nav = document.getElementById('nav');
-  nav.innerHTML = DAYS.map((d, i) =>
-    '<a data-day="' + d + '" class="' + (i === 0 ? 'active' : '') + '">' + d.slice(0,3) + '</a>'
+  const today = DAYS[new Date().getDay()];
+  nav.innerHTML = DAYS.map((d) =>
+    '<a data-day="' + d + '" class="' + (d === today ? 'active' : '') + '">' + d.slice(0,3) + '</a>'
   ).join('');
 
   const content = document.getElementById('content');
@@ -146,7 +147,7 @@ function render(plan) {
     dayTotals.cal = Math.round(dayTotals.p) * 4 + Math.round(dayTotals.c) * 4 + Math.round(dayTotals.f) * 9;
 
     const dayEl = document.createElement('div');
-    dayEl.className = 'day' + (i === 0 ? ' visible' : '');
+    dayEl.className = 'day' + (day === today ? ' visible' : '');
     dayEl.id = day.toLowerCase();
 
     let html = '<div class="day-head"><div class="day-name">' + (t.workout || day) + '</div><div class="day-label">' + day + '</div></div>';
