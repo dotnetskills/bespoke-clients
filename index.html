@@ -59,7 +59,13 @@
     background: #242424; border-radius: 10px;
     padding: 12px 14px; margin-bottom: 8px;
   }
-  .card-head { margin-bottom: 8px; }
+  .card-head { margin-bottom: 0; cursor: pointer; display: flex; justify-content: space-between; align-items: flex-start; }
+  .card-head .card-info { flex: 1; }
+  .card-head .chevron { color: rgba(229,224,223,0.3); font-size: 14px; margin-left: 8px; margin-top: 2px; transition: transform 0.2s; }
+  .card.open .card-head { margin-bottom: 8px; }
+  .card.open .chevron { transform: rotate(180deg); }
+  .card ul { display: none; }
+  .card.open ul { display: block; }
   .card-name { font-size: 14px; font-weight: 600; display: block; }
   .card-macros { font-size: 11px; color: rgba(229,224,223,0.5); display: block; margin-top: 2px; }
   .card ul { list-style: none; padding: 0; }
@@ -157,8 +163,8 @@ function render(plan) {
       });
       mt.cal = Math.round(mt.p) * 4 + Math.round(mt.c) * 4 + Math.round(mt.f) * 9;
 
-      html += '<div class="card"><div class="card-head"><span class="card-name">' + meal.name + '</span>';
-      html += '<span class="card-macros">' + mt.cal + ' cal \u00b7 ' + Math.round(mt.p) + 'P \u00b7 ' + Math.round(mt.c) + 'C \u00b7 ' + Math.round(mt.f) + 'F</span></div><ul>';
+      html += '<div class="card"><div class="card-head" onclick="this.parentElement.classList.toggle(\'open\')"><div class="card-info"><span class="card-name">' + meal.name + '</span>';
+      html += '<span class="card-macros">' + mt.cal + ' cal \u00b7 ' + Math.round(mt.p) + 'P \u00b7 ' + Math.round(mt.c) + 'C \u00b7 ' + Math.round(mt.f) + 'F</span></div><span class="chevron">▼</span></div><ul>';
 
       (meal.ingredients || []).forEach(ir => {
         const ing = ingredients[ir.ingredientId];
