@@ -127,38 +127,38 @@ function render(plan) {
     const t = targets[day] || {};
     const targetCal = Math.round(4 * (t.p || 0) + 4 * (t.c || 0) + 9 * (t.f || 0));
 
-    const dayTotals = { cal: 0, p: 0, c: 0, f: 0 };
+    const dayTotals = { p: 0, c: 0, f: 0 };
     meals.forEach(meal => {
       (meal.ingredients || []).forEach(ir => {
         const ing = ingredients[ir.ingredientId];
         if (!ing) return;
-        dayTotals.cal += ir.amount * ing.per.cal;
         dayTotals.p += ir.amount * ing.per.p;
         dayTotals.c += ir.amount * ing.per.c;
         dayTotals.f += ir.amount * ing.per.f;
       });
     });
+    dayTotals.cal = Math.round(dayTotals.p) * 4 + Math.round(dayTotals.c) * 4 + Math.round(dayTotals.f) * 9;
 
     const dayEl = document.createElement('div');
     dayEl.className = 'day' + (i === 0 ? ' visible' : '');
     dayEl.id = day.toLowerCase();
 
     let html = '<div class="day-head"><div class="day-name">' + (t.workout || day) + '</div><div class="day-label">' + day + '</div></div>';
-    html += '<div class="day-summary">' + Math.round(dayTotals.cal) + ' / ' + targetCal + ' cal \u00b7 ' + Math.round(dayTotals.p) + 'P \u00b7 ' + Math.round(dayTotals.c) + 'C \u00b7 ' + Math.round(dayTotals.f) + 'F</div>';
+    html += '<div class="day-summary">' + dayTotals.cal + ' / ' + targetCal + ' cal \u00b7 ' + Math.round(dayTotals.p) + 'P \u00b7 ' + Math.round(dayTotals.c) + 'C \u00b7 ' + Math.round(dayTotals.f) + 'F</div>';
 
     meals.forEach(meal => {
-      const mt = { cal: 0, p: 0, c: 0, f: 0 };
+      const mt = { p: 0, c: 0, f: 0 };
       (meal.ingredients || []).forEach(ir => {
         const ing = ingredients[ir.ingredientId];
         if (!ing) return;
-        mt.cal += ir.amount * ing.per.cal;
         mt.p += ir.amount * ing.per.p;
         mt.c += ir.amount * ing.per.c;
         mt.f += ir.amount * ing.per.f;
       });
+      mt.cal = Math.round(mt.p) * 4 + Math.round(mt.c) * 4 + Math.round(mt.f) * 9;
 
       html += '<div class="card"><div class="card-head"><span class="card-name">' + meal.name + '</span>';
-      html += '<span class="card-macros">' + Math.round(mt.cal) + ' cal \u00b7 ' + Math.round(mt.p) + 'P \u00b7 ' + Math.round(mt.c) + 'C \u00b7 ' + Math.round(mt.f) + 'F</span></div><ul>';
+      html += '<span class="card-macros">' + mt.cal + ' cal \u00b7 ' + Math.round(mt.p) + 'P \u00b7 ' + Math.round(mt.c) + 'C \u00b7 ' + Math.round(mt.f) + 'F</span></div><ul>';
 
       (meal.ingredients || []).forEach(ir => {
         const ing = ingredients[ir.ingredientId];
