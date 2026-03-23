@@ -1,5 +1,5 @@
 {
-  "generated": "Mar 22, 2026",
+  "generated": "Mar 23, 2026",
   "weekMeals": {
     "Sunday": [
       {
@@ -23,7 +23,7 @@
           {
             "id": "ir_2",
             "ingredientId": "ingredient.nutrabio_super_carb",
-            "amount": 3
+            "amount": 28
           }
         ],
         "collapsed": false
@@ -59,12 +59,12 @@
           {
             "id": "ir_6",
             "ingredientId": "ingredient.good_culture_2pct_low_fat_cottage_cheese",
-            "amount": 170
+            "amount": 181
           },
           {
             "id": "ir_7",
             "ingredientId": "ingredient.kind_oats_and_honey_granola",
-            "amount": 80
+            "amount": 70
           }
         ],
         "collapsed": false
@@ -78,11 +78,6 @@
             "id": "ir_8",
             "ingredientId": "ingredient.sprouts_all_natural_95pct_extra_lean_ground_beef",
             "amount": 200
-          },
-          {
-            "id": "ir_9",
-            "ingredientId": "ingredient.mission_extra_grande_burrito_flour_tortillas",
-            "amount": 102
           },
           {
             "id": "ir_10",
@@ -100,9 +95,14 @@
             "amount": 30
           },
           {
-            "id": "ir_2",
+            "id": "ir_106",
             "ingredientId": "ingredient.olive_oil",
-            "amount": 3
+            "amount": 10
+          },
+          {
+            "id": "ir_117",
+            "ingredientId": "ingredient.custom_201",
+            "amount": 71
           }
         ],
         "collapsed": false
@@ -115,7 +115,7 @@
           {
             "id": "ir_14",
             "ingredientId": "ingredient.good_culture_2pct_low_fat_cottage_cheese",
-            "amount": 145
+            "amount": 150
           },
           {
             "id": "ir_15",
@@ -156,7 +156,7 @@
             "amount": 28
           }
         ],
-        "collapsed": true
+        "collapsed": false
       },
       {
         "id": "meal_9",
@@ -169,7 +169,7 @@
             "amount": 28
           }
         ],
-        "collapsed": true
+        "collapsed": false
       },
       {
         "id": "meal_10",
@@ -192,7 +192,7 @@
             "amount": 50
           }
         ],
-        "collapsed": true
+        "collapsed": false
       },
       {
         "id": "meal_11",
@@ -207,7 +207,7 @@
           {
             "id": "ir_24",
             "ingredientId": "ingredient.kind_oats_and_honey_granola",
-            "amount": 40
+            "amount": 52
           }
         ],
         "collapsed": false
@@ -221,11 +221,6 @@
             "id": "ir_25",
             "ingredientId": "ingredient.sprouts_all_natural_95pct_extra_lean_ground_beef",
             "amount": 200
-          },
-          {
-            "id": "ir_26",
-            "ingredientId": "ingredient.mission_extra_grande_burrito_flour_tortillas",
-            "amount": 102
           },
           {
             "id": "ir_27",
@@ -245,7 +240,12 @@
           {
             "id": "ir_54",
             "ingredientId": "ingredient.olive_oil",
-            "amount": 10
+            "amount": 12
+          },
+          {
+            "id": "ir_118",
+            "ingredientId": "ingredient.custom_201",
+            "amount": 71
           }
         ],
         "collapsed": false
@@ -263,7 +263,7 @@
           {
             "id": "ir_32",
             "ingredientId": "ingredient.kind_oats_and_honey_granola",
-            "amount": 35
+            "amount": 45
           }
         ],
         "collapsed": false
@@ -299,7 +299,7 @@
             "amount": 28
           }
         ],
-        "collapsed": true
+        "collapsed": false
       },
       {
         "id": "meal_24",
@@ -312,7 +312,7 @@
             "amount": 28
           }
         ],
-        "collapsed": true
+        "collapsed": false
       },
       {
         "id": "meal_25",
@@ -335,7 +335,7 @@
             "amount": 50
           }
         ],
-        "collapsed": true
+        "collapsed": false
       },
       {
         "id": "meal_26",
@@ -350,7 +350,7 @@
           {
             "id": "ir_61",
             "ingredientId": "ingredient.kind_oats_and_honey_granola",
-            "amount": 40
+            "amount": 52
           }
         ],
         "collapsed": false
@@ -364,11 +364,6 @@
             "id": "ir_62",
             "ingredientId": "ingredient.sprouts_all_natural_95pct_extra_lean_ground_beef",
             "amount": 200
-          },
-          {
-            "id": "ir_63",
-            "ingredientId": "ingredient.mission_extra_grande_burrito_flour_tortillas",
-            "amount": 102
           },
           {
             "id": "ir_64",
@@ -388,7 +383,12 @@
           {
             "id": "ir_67",
             "ingredientId": "ingredient.olive_oil",
-            "amount": 10
+            "amount": 12
+          },
+          {
+            "id": "ir_119",
+            "ingredientId": "ingredient.custom_201",
+            "amount": 71
           }
         ],
         "collapsed": false
@@ -406,7 +406,7 @@
           {
             "id": "ir_69",
             "ingredientId": "ingredient.kind_oats_and_honey_granola",
-            "amount": 35
+            "amount": 45
           }
         ],
         "collapsed": false
@@ -452,10 +452,10 @@
           {
             "id": "ir_38",
             "ingredientId": "ingredient.nutrabio_super_carb",
-            "amount": 3
+            "amount": 28
           }
         ],
-        "collapsed": true
+        "collapsed": false
       },
       {
         "id": "meal_18",
@@ -488,12 +488,12 @@
           {
             "id": "ir_42",
             "ingredientId": "ingredient.good_culture_2pct_low_fat_cottage_cheese",
-            "amount": 170
+            "amount": 181
           },
           {
             "id": "ir_43",
             "ingredientId": "ingredient.kind_oats_and_honey_granola",
-            "amount": 80
+            "amount": 70
           }
         ],
         "collapsed": false
@@ -507,11 +507,6 @@
             "id": "ir_44",
             "ingredientId": "ingredient.sprouts_all_natural_95pct_extra_lean_ground_beef",
             "amount": 200
-          },
-          {
-            "id": "ir_45",
-            "ingredientId": "ingredient.mission_extra_grande_burrito_flour_tortillas",
-            "amount": 102
           },
           {
             "id": "ir_46",
@@ -531,7 +526,12 @@
           {
             "id": "ir_49",
             "ingredientId": "ingredient.olive_oil",
-            "amount": 3
+            "amount": 10
+          },
+          {
+            "id": "ir_120",
+            "ingredientId": "ingredient.custom_201",
+            "amount": 71
           }
         ],
         "collapsed": false
@@ -575,30 +575,30 @@
     ],
     "Thursday": [
       {
-        "id": "meal_29",
+        "id": "meal_44",
         "recipeId": "recipe.pre_workout",
         "name": "Pre Workout",
         "ingredients": [
           {
-            "id": "ir_69",
+            "id": "ir_107",
             "ingredientId": "ingredient.nutrabio_super_carb",
             "amount": 28
           }
         ],
-        "collapsed": true
+        "collapsed": false
       },
       {
-        "id": "meal_1",
+        "id": "meal_45",
         "recipeId": "recipe.intra_workout",
         "name": "Intra Workout",
         "ingredients": [
           {
-            "id": "ir_1",
+            "id": "ir_108",
             "ingredientId": "ingredient.nutrabio_super_carb",
-            "amount": 20
+            "amount": 56
           }
         ],
-        "collapsed": true
+        "collapsed": false
       },
       {
         "id": "meal_31",
@@ -606,7 +606,7 @@
         "name": "Post Workout Shake",
         "ingredients": [
           {
-            "id": "ir_71",
+            "id": "ir_109",
             "ingredientId": "ingredient.muscle_feast_highly_branched_cyclic_dextrin_powder",
             "amount": 60
           },
@@ -631,12 +631,12 @@
           {
             "id": "ir_74",
             "ingredientId": "ingredient.good_culture_2pct_low_fat_cottage_cheese",
-            "amount": 110
+            "amount": 120
           },
           {
             "id": "ir_75",
             "ingredientId": "ingredient.kind_oats_and_honey_granola",
-            "amount": 110
+            "amount": 90
           }
         ],
         "collapsed": false
@@ -672,9 +672,9 @@
             "amount": 30
           },
           {
-            "id": "ir_1",
+            "id": "ir_110",
             "ingredientId": "ingredient.olive_oil",
-            "amount": 20
+            "amount": 24
           }
         ],
         "collapsed": false
@@ -687,12 +687,12 @@
           {
             "id": "ir_82",
             "ingredientId": "ingredient.good_culture_2pct_low_fat_cottage_cheese",
-            "amount": 110
+            "amount": 120
           },
           {
             "id": "ir_83",
             "ingredientId": "ingredient.kind_oats_and_honey_granola",
-            "amount": 100
+            "amount": 80
           }
         ],
         "collapsed": false
@@ -730,28 +730,28 @@
           {
             "id": "ir_93",
             "ingredientId": "ingredient.almond_breeze_unsweetened_original_almondmilk",
-            "amount": 720
+            "amount": 475
           }
         ],
         "collapsed": false
       },
       {
-        "id": "meal_1",
+        "id": "meal_46",
         "recipeId": "recipe.prime_filet_plate",
         "name": "Prime Filet Plate",
         "ingredients": [
           {
-            "id": "ir_2",
+            "id": "ir_111",
             "ingredientId": "ingredient.lucky_7_multigrain_sourdough",
             "amount": 235
           },
           {
-            "id": "ir_3",
+            "id": "ir_112",
             "ingredientId": "ingredient.whipped_cream_cheese_spread",
             "amount": 60
           },
           {
-            "id": "ir_73",
+            "id": "ir_113",
             "ingredientId": "ingredient.sprouts_all_natural_95pct_extra_lean_ground_beef",
             "amount": 220
           }
@@ -759,19 +759,19 @@
         "collapsed": false
       },
       {
-        "id": "meal_2",
+        "id": "meal_47",
         "recipeId": "recipe.bedtime",
         "name": "Bedtime",
         "ingredients": [
           {
-            "id": "ir_4",
+            "id": "ir_114",
             "ingredientId": "ingredient.good_culture_2pct_low_fat_cottage_cheese",
             "amount": 330
           },
           {
-            "id": "ir_5",
+            "id": "ir_115",
             "ingredientId": "ingredient.kind_oats_and_honey_granola",
-            "amount": 190
+            "amount": 192
           }
         ],
         "collapsed": false
@@ -791,7 +791,7 @@
           {
             "id": "ir_96",
             "ingredientId": "ingredient.almond_breeze_unsweetened_original_almondmilk",
-            "amount": 280
+            "amount": 300
           }
         ],
         "collapsed": false
@@ -809,7 +809,7 @@
           {
             "id": "ir_98",
             "ingredientId": "ingredient.kind_oats_and_honey_granola",
-            "amount": 65
+            "amount": 66
           }
         ],
         "collapsed": false
@@ -830,7 +830,7 @@
             "amount": 60
           },
           {
-            "id": "ir_72",
+            "id": "ir_116",
             "ingredientId": "ingredient.sprouts_all_natural_95pct_extra_lean_ground_beef",
             "amount": 75
           }
@@ -994,7 +994,7 @@
     },
     "ingredient.mission_extra_grande_burrito_flour_tortillas": {
       "id": "ingredient.mission_extra_grande_burrito_flour_tortillas",
-      "name": "Mission Burrito Tortilla",
+      "name": "Mission Grande Burrito Tortilla",
       "unit": "g",
       "per": {
         "cal": 2.941176,
@@ -1002,7 +1002,7 @@
         "c": 0.5,
         "f": 0.058824
       },
-      "archived": false,
+      "archived": true,
       "cronName": "Mission, Extra Grande Burrito Flour Tortillas"
     },
     "ingredient.olive_oil": {
@@ -1290,6 +1290,18 @@
       },
       "archived": false,
       "cronName": "Cream Cheese, Whipped"
+    },
+    "ingredient.custom_201": {
+      "id": "ingredient.custom_201",
+      "name": "Mission Super Soft Flour Tortillas Burrito Size",
+      "unit": "g",
+      "per": {
+        "cal": 2.9577464788732395,
+        "p": 0.08450704225352113,
+        "c": 0.49295774647887325,
+        "f": 0.06338028169014084
+      },
+      "archived": false
     }
   }
 }
